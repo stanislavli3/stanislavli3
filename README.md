@@ -22,7 +22,7 @@ Sales and marketing teams spent time hunting for research they were allowed to u
 
 **Identity verification on enterprise Ethereum, Oracle**<br>
 <sub>Enterprise project · registry code public, the rest private</sub><br>
-Regulated issuers need to verify identity (KYC) before they can use a blockchain network. As part of a five-person Lehigh team working with Oracle engineers, I built identity verification modules on Hyperledger Besu, including a decentralized identifier (DID) registry ported from Fabric chaincode to Solidity.<br>
+Regulated issuers need to verify identity (KYC) before they can use a blockchain network. Working with Oracle engineers on a five-person team, I built identity verification modules on Hyperledger Besu, including a decentralized identifier (DID) registry ported from Fabric chaincode to Solidity.<br>
 <sub>Solidity, Hardhat, TypeScript, Hyperledger Besu</sub> · [did](https://github.com/stanislavli3/did)
 
 **Research data pipelines, Lehigh Computer Vision Lab**<br>
