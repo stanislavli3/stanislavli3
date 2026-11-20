@@ -1,5 +1,3 @@
-### Stanislav Li
-
 I take AI from business case to production inside real companies. Applied AI at Freshpet, co-founder of Yük and Ragu, Lehigh.
 
 [stanislavli.xyz](https://www.stanislavli.xyz/) · [LinkedIn](https://www.linkedin.com/in/stanislavli/) · [X](https://x.com/stanislavlii)
