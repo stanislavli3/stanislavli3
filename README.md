@@ -10,22 +10,22 @@ Most of this is enterprise or client work (I promised them security 🙂), so th
 
 ## Work
 
-| Project | Problem | What I did | Stack | Code |
-|---|---|---|---|---|
-| **Vision quality checks**<br><sub>Freshpet · 2025 to 2026</sub> | Manual visual QA on production lines. | Took 4 CV models to prod across 3 plants. Built the human-in-the-loop QA app and a FastAPI alerting service pushing detections to Teams. | Python, FastAPI, React, TypeScript, Docker, Azure | Private |
-| **Approved-sources assistant**<br><sub>Freshpet · 2026</sub> | No safe way to query approved research. | Solo-built a RAG assistant with server-side citation checks and guardrails, behind company SSO. Wrote the AI governance tiers. | TypeScript, Node.js, React, RAG, SSO | Private |
-| **Identity verification**<br><sub>Oracle · 2026</sub> | Regulated issuers need KYC on-chain. | Ported a DID registry from Fabric chaincode to Solidity; built KYC credential modules on Besu. | Solidity, Hardhat, Hyperledger Besu, TypeScript, Docker | [did](https://github.com/stanislavli3/did) |
-| **Research pipelines**<br><sub>Lehigh CV Lab · 2024 to 2025</sub> | Slow, GPU-heavy data processing. | Automated the data pipeline to cut compute cost and iteration time. Ran retrieval-bias evals on AI search. | Python, PyTorch, GPUs | Private |
+| Project | Problem | Technical complexity | Stack |
+|---|---|---|---|
+| **Vision quality checks**<br><sub>Freshpet · 2025 to 2026</sub> | Manual visual QA on production lines. | Computer vision inference on live line cameras across 3 plants. Thresholds tuned to the cost of a false reject vs a miss. Human-in-the-loop review that feeds labels back, plus event-driven alerting to QA. | Python, FastAPI, React, TypeScript, Docker, Azure |
+| **Approved-sources assistant**<br><sub>Freshpet · 2026</sub> | No safe way to query approved research. | Retrieval restricted to an approved corpus. Every citation is verified server-side before an answer is shown. Guardrails enforced in code and covered by tests; secrets and model calls stay server-side behind SSO. | TypeScript, Node.js, React, RAG, SSO |
+| **Identity verification**<br><sub>Oracle · 2026</sub> | Regulated issuers need KYC before using a blockchain network. | Port of a DID registry from permissioned-chain chaincode to EVM smart contracts with operation-level parity. Signature and nonce based authorization; schema, credential definition and revocation registries; integration tests on a local Besu network. | Solidity, Hardhat, Hyperledger Besu, TypeScript, Docker |
+| **Research pipelines**<br><sub>Lehigh CV Lab · 2024 to 2025</sub> | Slow, GPU-heavy data processing. | Automated a manual, GPU-bound data pipeline to cut compute cost and iteration time. Built an evaluation harness for ranking bias in multimodal retrieval. | Python, PyTorch, GPUs |
 
 ## Startups and client work
 
-| Project | Problem | What I did | Stack | Code |
-|---|---|---|---|---|
-| **Yük**<br><sub>Logistics · 2026</sub> | Freight dispatch runs in chat groups, no system of record. | LLM pipeline turning multilingual chats into orders; multi-tenant TMS with live map; driver app with background GPS; MCP agent with typed, tenant-scoped tools behind a 90% eval gate. | FastAPI, Claude, Postgres (RLS), React, React Native, MCP, AWS, Terraform | Private |
-| **Ragu**<br><sub>Payments · 2026</sub> | Every bank and QR provider is a separate integration. | Payment orchestration API and hosted checkout (QR, cards, Apple Pay) with HMAC-signed webhooks and reconciliation. Never touches funds or card data. | TypeScript, Next.js, Postgres, Redis, MCP, Docker, GitHub Actions | [site](https://ragu-payments.vercel.app) |
-| **Operations ledger**<br><sub>Drinks maker · 2026</sub> | Stock, production and debts on paper. | Ledger with accounting rules enforced in Postgres; unit cost, margin and receivables reports. | Next.js, TypeScript, Postgres, Drizzle, Docker | Private |
-| **Sani School**<br><sub>Education · 2025</sub> | Mixed-level online classes. | Built the site and a clustering model that groups students by level. | React, TypeScript, Cloudflare, clustering | Private |
-| **nawa**<br><sub>Video studio · 2026</sub> | Needed a fast, cinematic marketing site. | Built the site with scroll-driven animation and CI deploys. | Next.js, TypeScript, Tailwind, GSAP, GitHub Actions | [site](https://nawaprod.com/) |
+| Project | Problem | Technical complexity | Stack |
+|---|---|---|---|
+| **Yük**<br><sub>Logistics · 2026</sub> | Freight dispatch runs in chat groups, with no system of record. | LLM extraction of noisy, multilingual chat messages into typed orders. Multi-tenant isolation at the database layer with Postgres row-level security. Real-time tracking with background GPS on iOS and Android. An agent limited to typed, tenant-scoped MCP tools, red-teamed for prompt injection and gated by evals. Infrastructure as code on AWS. | FastAPI, Claude, Postgres (RLS), React, React Native, MCP, AWS, Terraform |
+| **Ragu**<br><sub>Payments · 2026</sub> | Every bank and QR provider is a separate integration. | One API over heterogeneous bank and QR provider APIs, with idempotent requests, HMAC-signed webhooks and reconciliation against provider reports. Compliance invariants (no funds held, no card data) enforced in code and in CI. | TypeScript, Next.js, Postgres, Redis, MCP, Docker, GitHub Actions |
+| **Operations ledger**<br><sub>Drinks maker · 2026</sub> | Stock, production and debts tracked on paper. | Four transaction types as the single source of truth, with every report derived from them. Accounting rules enforced as database constraints and triggers. A natural-language query box limited to fixed, parameterized queries. | Next.js, TypeScript, Postgres, Drizzle, Docker |
+| **Sani School**<br><sub>Education · 2025</sub> | Mixed-level online classes. | Clustering students by placement results into same-level groups of four. Site served from the edge. | React, TypeScript, Cloudflare, clustering |
+| **nawa**<br><sub>Video studio · 2026</sub> | Needed a fast site built around heavy video. | Static-exported site with scroll-driven animation and video-heavy pages kept fast; CI deploys. | Next.js, TypeScript, Tailwind, GSAP, GitHub Actions |
 
 ## Open source
 
