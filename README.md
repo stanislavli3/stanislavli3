@@ -10,7 +10,7 @@ Today, even my friends at top AI labs and big tech companies write about 95% of 
 
 That's what I try to focus on.
 
-Many of these are enterprise or client apps, so the code is private and I can't share it. Each one has a short explanation below; where the code is public, there's a link.
+Many of these are enterprise or client apps (and I promised them security 🙂), so the code is private and I can't share it. Each one has a short explanation below; where the code is public, there's a link.
 
 [stanislavli.xyz](https://www.stanislavli.xyz/) · [LinkedIn](https://www.linkedin.com/in/stanislavli/) · [X](https://x.com/stanislavlii)
 
