@@ -1,16 +1,8 @@
-Hi, I'm Stanislav. I study computer science and business at Lehigh University.
+Hi, I'm Stanislav. I study computer science and business at Lehigh, and for three years I've worked on technical projects: computer vision in plants, AI tools inside companies, blockchain identity, research and startups.
 
-Over the past three years I've worked on a range of technical projects: computer vision in manufacturing plants, AI tools inside companies, blockchain identity, research pipelines, and a few startups with friends. I like taking something complex and getting it to the point where people actually use it.
+Even my friends at top AI labs write about 95% of their code with AI. The hard part is building something that (1) people like, (2) solves a real business problem, and (3) earns or saves real money, not projected money.
 
-Today, even my friends at top AI labs and big tech companies write about 95% of their code with AI. So writing the code is rarely the hardest part. The hard part is everything around it:
-
-1. Making something people actually like to use.
-2. Solving a real business problem, not an imagined one.
-3. Earning or saving real money, not projected money.
-
-That's what I try to focus on.
-
-Many of these are enterprise or client apps (and I promised them security 🙂), so the code is private and I can't share it. Each one has a short explanation below; where the code is public, there's a link.
+Most of this is enterprise or client work (I promised them security 🙂), so the code is private. Public code is linked.
 
 [stanislavli.xyz](https://www.stanislavli.xyz/) · [LinkedIn](https://www.linkedin.com/in/stanislavli/) · [X](https://x.com/stanislavlii)
 
