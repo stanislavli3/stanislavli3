@@ -4,7 +4,7 @@ Even my friends at top AI labs write about 95% of their code with AI. The hard p
 
 Most of this is enterprise or client work (I promised them security 🙂), so the code is private. Public code is linked.
 
-[stanislavli.xyz](https://www.stanislavli.xyz/) · [LinkedIn](https://www.linkedin.com/in/stanislavli/) · [X](https://x.com/stanislavlii)
+[stanislavli.xyz](https://www.stanislavli.xyz/) · [LinkedIn](https://www.linkedin.com/in/stanislavli/) · [X](https://x.com/stanislavlii) · [Instagram](https://www.instagram.com/stanislavlii/)
 
 &nbsp;
 
